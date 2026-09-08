@@ -2,15 +2,13 @@
 
 ## Read and select
 
-Use the supplied historical candidate set rather than searching the entire CRM for success stories. Two supplied cases are enough for the prototype. Verify their actual won stage using the configured pipeline; verify that available activity history contains a troubled period followed by an action actually taken. Keep exclusions and missing evidence visible.
+Use the supplied historical candidate set. Verify their actual won stage using the configured pipeline; verify that available activity history contains a troubled period followed by an action actually taken. Keep exclusions and missing evidence visible.
 
-Construct each candidate's timestamped story using the shared reader. Extract the problem episode, relevant context, actions taken, subsequent buyer response, and recorded final outcome. Cite source object IDs and links for each material claim. A closed-won deal without a documented recovery action cannot establish a recovery tactic. Retain it as an insufficient case rather than inventing the missing sequence.
-
-Use user-supplied hypothetical facts only when explicitly identified as synthetic exercise data. Label those cases and lessons synthetic. Do not silently fill gaps in real evidence.
+Construct each candidate's timestamped story using the shared reader. Extract the problem episode, relevant context, resolution actions taken, subsequent buyer response, and recorded final outcome. Cite source object IDs and links for each material claim. A closed-won deal without a documented recovery action cannot establish a recovery tactic. Retain it as an insufficient case rather than inventing the missing sequence.
 
 ## Consolidate lessons
 
-Default to at most two evidence-supported signal families for this prototype. Preserve multiple candidate actions where supported; choose actions during Review according to current context. Do not require a tactic to appear in both cases or label one occurrence a recurring pattern.
+Default to at least two evidence-supported signal families. Preserve multiple candidate actions where supported; choose actions during Review according to current context. Do not require a tactic to appear in both cases or label one occurrence a recurring pattern.
 
 Assign stable IDs such as `L1` for a lesson and `L1-A1` for an action. Each lesson contains:
 
@@ -18,7 +16,7 @@ Assign stable IDs such as `L1` for a lesson and `L1-A1` for an action. Each less
 - **Context:** relevant stage, stakeholder role, constraint, or situation.
 - **Actions:** each observed action's intent, applicability, exclusions, and information needed to propose it.
 - **Evidence:** case references and source IDs, including actual action and subsequent response evidence where available.
-- **Limitations:** supporting case count, missing response evidence, synthetic status, and uncertain attribution.
+- **Limitations:** supporting case count, missing response evidence, and uncertain attribution.
 
 Keep compact historical case summaries in the catalog so Review need not retrieve every old activity. Retain source IDs for deeper checks.
 

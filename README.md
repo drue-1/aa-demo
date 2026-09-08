@@ -2,13 +2,6 @@
 
 Reusable HubSpot deal-recovery workflow by Drue. Learn from selected troubled-but-won deals, review open deals against the saved catalog, and create tasks after the rep approves specific proposals.
 
-## Publish this repository
-
-Extract this archive and commit the CONTENTS of this folder to your GitHub repository root. Include the hidden `.agents` and `.codex-plugin` directories. Commit the unpacked files, not just this ZIP. GitHub Desktop or Git can include the hidden directories reliably.
-
-The repository already contains `.agents/plugins/marketplace.json`, pointing to `./` (the repository root). The marketplace is named `deal-recovery-marketplace`.
-
-The plugin manifest, app declaration, skills, and assets all live directly at the repository root. There is no outer `plugins/` directory. Keep `.agents/plugins/marketplace.json` in its standard location; that nested path is the marketplace metadata location.
 
 ## Recipient setup
 
@@ -26,16 +19,6 @@ codex plugin marketplace add OWNER/REPO
 For an extracted local repository, the marketplace-add command can instead use its absolute root path. Browser-only users should use their workspace's supported GitHub marketplace import process (admin access may be required); pasting a GitHub URL into an ordinary chat does not guarantee installation.
 
 Connecting HubSpot after Deal Recovery installation is also possible: finish authentication when prompted or connect HubSpot separately in Plugins, then start a new chat. Until that connection is available, Deal Recovery cannot read or write CRM records. Installing this repository does not transfer the author's HubSpot access.
-
-## What the HubSpot ID means
-
-`.app.json` declares the official HubSpot app ID `asdk_app_697acb8e53d88191bf7a79e62012ae14`. This is an integration identifier, not a HubSpot portal ID, user ID, password, or OAuth token. It matches the official HubSpot plugin manifest and was resolved through plugin dependency metadata to the public HubSpot catalog entry on 2026-09-08. Each recipient authenticates their own connection. Their workspace policies and account availability still apply.
-
-HubSpot is required by the workflow. The app declaration uses the validated `id` mapping; marketplace authentication policy is `ON_INSTALL`. Exact prompts depend on the host. No custom MCP server or `.mcp.json` is needed for this connector-based workflow.
-
-## Usage and scope
-
-See [the workflow guide](USAGE.md) for Learn, Review, task approval, and optional scheduling. This repository contains no customer records, saved catalog, account credentials, or active schedule. Installation does not start an automated review.
 
 ## Verification
 

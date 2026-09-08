@@ -1,0 +1,9 @@
+interface:
+  display_name: Deal Recovery
+  short_description: Turn deal lessons into rep-approved CRM tasks
+  default_prompt: Use $deal-recovery to review open deals against my saved catalog
+    and propose recovery tasks for my approval.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true

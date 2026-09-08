@@ -10,10 +10,6 @@ The plugin includes the Deal Recovery skill, its supporting references and ident
 
 Recommended: install the official HubSpot plugin and connect your own HubSpot account first. Then install Deal Recovery from your configured marketplace and start a new Work conversation. If you install Deal Recovery first, complete the HubSpot connection when prompted or connect it separately in Plugins, then start a new conversation. CRM operations require a completed connection. A recipient must authenticate their own HubSpot connection and have access to the selected deals and activities. Existing connection state is not transferred in this package. [Using plugins](https://learn.chatgpt.com/docs/plugins).
 
-For an archive handoff, extract the `deal-recovery` folder. Ask Plugin Creator in ChatGPT Work or Codex to register that folder in your personal marketplace, then install it from Plugins. Provide the actual extracted path. An archive is a portable package, not a public marketplace listing. [Local plugin setup](https://developers.openai.com/plugins/build/plugins).
-
-Use Work or a compatible Codex environment with the HubSpot connector and Python 3 available for the bundled identity helper. The plugin requires no custom server, database, or API key. Model and reasoning settings belong to the host runtime. Choose your preferred available model there; the plugin does not force one.
-
 ## 1. Build your catalog
 
 Choose a small set of previously troubled deals that eventually closed won and have activity histories documenting what the AE actually did. Decide which open deals you want future reviews to cover.
@@ -53,9 +49,3 @@ Use the same catalog until you deliberately request a refresh with selected hist
 - Keep pending, declined, and logged proposals distinct when state is saved.
 - Check for duplicate work, including equivalent tasks written by humans and legacy Deal Recovery tasks.
 - Report missing evidence, incomplete reads, and unsuccessful writes.
-
-An unchanged pending proposal may still appear awaiting approval. A completed task is not proof that the risk is resolved. Duplicate protection is designed for sequential runs; do not run overlapping task-creation passes for the same deals.
-
-## Package boundaries
-
-The package contains workflow instructions and supporting code. Customer records, catalog contents, note IDs, account credentials, demo data, and active schedules are supplied or created during use. This prototype uses HubSpot as its only business-system integration.

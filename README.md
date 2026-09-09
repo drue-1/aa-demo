@@ -2,7 +2,7 @@
 
 Make effective responses to difficult deals easier for every AE to reuse.
 
-Deal Recovery learns from selected troubled-but-won HubSpot deals, reviews current deals for relevant signals, and prepares useful next steps. The rep approves specific proposals before CRM tasks are created, then carries out the work.
+Deal Recovery learns from selected troubled-but-won HubSpot deals, reviews current deals for relevant signals, and prepares useful next steps. The rep approves specific proposals before CRM tasks are created.
 
 ## Install and connect
 
